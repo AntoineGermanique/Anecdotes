@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <style>
+        .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            transition: opacity 2s
+        }
+
+        .hide {
+            opacity: 0
+        }
+
+        .controls {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1
+        }
+    </style>
+    <script src="src/index.js">
+
+    </script>
+    <video class="video" id='main-player'></video>
+    <video class="video" id='transition-player-1' muted></video>
+    <video class="video" id='transition-player-2' muted></video>
+    <video class="video" id='intro-player' src="assets/intro.mp4"></video>
+    <audio src="assets/parliament.mp3"></audio>
+    <div class="controls">
+        <div id="play">play</div>
+    </div>
+</body>
+
+</html>
